@@ -14,7 +14,8 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) {
-        System.out.println("客户端的channelActive方法执行");
+        System.out.println("客户端的channelActive方法执行,分支测试");
+        System.out.println("代码提交测试");
         ctx.writeAndFlush(Unpooled.copiedBuffer("test message6", CharsetUtil.UTF_8));
 
     }
